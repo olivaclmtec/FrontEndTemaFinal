@@ -2,5 +2,11 @@ BARATARIA FRONT END PARTE ADMINISTRADOR
 
 ¿Como instalar el proyecto?
 - Descargar Node js
-- Descargar angular
-- npm install
+- Descargar Angular
+- Terminal -> npm install
+
+¿Cómo ejecutar el proyecto?
+- Terminal -> ng serve
+
+Visualización del proyecto
+- localhost:4200
