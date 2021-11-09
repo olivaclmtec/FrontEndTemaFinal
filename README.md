@@ -12,7 +12,5 @@ Visualización del proyecto
 - localhost:4200
 
 
-#CAMBIOS GIT HUB
-  - git add .
-  - git commit -m 'Nombre'
-  - git push -u origin main
+#PUBLICAR PROYECTO
+ng build --prod --base-href "/barataria/"
