@@ -10,3 +10,9 @@ BARATARIA FRONT END PARTE ADMINISTRADOR
 
 Visualización del proyecto
 - localhost:4200
+
+
+#CAMBIOS GIT HUB
+  - git add .
+  - git commit -m 'Nombre'
+  - git push -u origin main
