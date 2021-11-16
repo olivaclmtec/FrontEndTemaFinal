@@ -39,7 +39,7 @@ export class AppComponent {
       this.renderer.addClass(this.document.body, 'is-blink');
     }
 
-    this.sidenavService.addItems([
+   /* this.sidenavService.addItems([
       {
         name: 'APPS',
         position: 5,
@@ -238,6 +238,36 @@ export class AppComponent {
           }
         ]
       }
+    ]);*/
+
+    this.sidenavService.addItems([
+      {
+        name: 'Inicio',
+        routeOrFunction: '/admin',
+        icon: 'dashboard',
+        position: 10,
+        pathMatchExact: true
+      },
+      {
+        name: 'Actividades',
+        icon: 'description',
+        position: 45,
+        subItems: [
+          {
+            name: 'Nueva Actividad',
+            routeOrFunction: '/admin/actividad/nueva',
+            position: 10
+          },
+          {
+            name: 'Listado Actividades',
+            routeOrFunction: '/actividad/listado',
+            position: 15
+          }
+        ]
+      },
+      
     ]);
+
   }
+
 }

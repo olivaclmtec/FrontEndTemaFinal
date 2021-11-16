@@ -1,15 +1,19 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { NuevaActividadComponent } from "./actividad/nueva-actividad/nueva-actividad.component";
 import { AdminComponent } from "./admin.component";
+import { InicioComponent } from "./inicio/inicio.component";
 
 const routes: Routes = [
     {
         path: 'admin', component: AdminComponent, children : 
         [
             {
-                path: '',
-                loadChildren: () => import('src/app/pages/dashboard/dashboard.module').then(m => m.DashboardModule),
-                pathMatch: 'full'
+                path: '', component: InicioComponent
+            },
+            {
+                path: 'actividad/nueva',
+                component: NuevaActividadComponent
             },
         ]
     }
