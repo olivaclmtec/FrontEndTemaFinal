@@ -14,6 +14,7 @@
 .sidenav {
   height: 100%;
   will-change: width;
+  
 }
 
 .sidenav-toolbar {
@@ -36,7 +37,7 @@
     outline: none;
     margin-left: $sidenav-item-padding-left;
     margin-bottom: -5px;
-
+   
     svg {
       height: 30px;
       width: 60px;

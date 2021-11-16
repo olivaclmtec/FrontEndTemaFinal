@@ -1,3 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./@fury/styles/core";
 @import "./app/app.theme";
+
+
+.fury-default fury-sidenav .sidenav-toolbar {
+    background: #007a61;
+  }
+
+.fury-default fury-sidenav .sidenav-user {
+    background: #007a61;
+}
+
+.fury-default .sidenav-item .sidenav-item-link.active {
+    background: #007a61;
+    color: white;
+}
+
+.fury-default .sidenav-item {
+    color: white;
+}
+
+.fury-default .sidenav-item.level-0.dropdown-open > .sidenav-item-link {
+    color: white;
+}
