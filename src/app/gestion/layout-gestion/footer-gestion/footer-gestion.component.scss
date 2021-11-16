@@ -1,0 +1,15 @@
+@import "var";
+
+.footer {
+  height: $footer-height;
+  position: relative;
+  z-index: $footer-z-index;
+  padding-left: $spacing;
+  padding-right: $spacing;
+  background-color: #007a61;
+  color: white;
+
+  .name {
+    letter-spacing: 0;
+  }
+}
