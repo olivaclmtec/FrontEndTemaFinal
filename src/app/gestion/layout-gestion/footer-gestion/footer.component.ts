@@ -3,9 +3,9 @@ import { ThemeService } from 'src/@fury/services/theme.service';
 import { map } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer-gestion.component.html',
-  styleUrls: ['./footer-gestion.component.scss']
+  selector: 'fury-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.scss']
 })
 export class FooterGestionComponent implements OnInit, OnDestroy {
 

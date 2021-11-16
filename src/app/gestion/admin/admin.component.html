@@ -1,6 +1,4 @@
-<fury-loading-indicator></fury-loading-indicator>
 <fury-backdrop #backdrop="furyBackdrop"></fury-backdrop>
-<fury-config-panel-toggle (openConfig)="openConfigPanel()"></fury-config-panel-toggle>
 
 <!-- QUICKPANEL -->
 <fury-sidebar #configPanel="furySidebar" [backdrop]="backdrop" [invisibleBackdrop]="true" position="right">
@@ -49,9 +47,6 @@
           <router-outlet></router-outlet>
         </div>
 
-        <ng-container *ngIf="(footerPosition$ | async) === 'static'">
-          <ng-container *ngTemplateOutlet="footer"></ng-container>
-        </ng-container>
       </div>
       <!-- END CONTENT -->
 
@@ -61,9 +56,6 @@
     </mat-sidenav-content>
   </mat-sidenav-container>
 
-  <ng-container *ngIf="(footerPosition$ | async) === 'above-fixed'">
-    <ng-container *ngTemplateOutlet="footer"></ng-container>
-  </ng-container>
 </div>
 
 <ng-template #toolbar>
@@ -73,6 +65,7 @@
                 (openSidenav)="openSidenav()"
                 *ngIf="toolbarVisible$ | async"
                 fxFlex="none"></fury-toolbar>
+
   <!-- END TOOLBAR -->
 
   <!-- NAVIGATION -->
@@ -83,7 +76,7 @@
 
 <!-- FOOTER -->
 <ng-template #footer>
-  <app-footer fxFlex="none"></app-footer>
+  <fury-footer fxFlex="none"></fury-footer>
 </ng-template>
  <!-- END FOOTER -->
 

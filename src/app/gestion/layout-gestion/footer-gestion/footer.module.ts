@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from 'src/@fury/shared/material-components.module';
-import { FooterGestionComponent } from './footer-gestion.component';
+import { FooterGestionComponent } from './footer.component';
 
 @NgModule({
   imports: [
