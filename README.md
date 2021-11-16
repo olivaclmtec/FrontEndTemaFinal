@@ -10,3 +10,7 @@ BARATARIA FRONT END PARTE ADMINISTRADOR
 
 Visualización del proyecto
 - localhost:4200
+
+
+#PUBLICAR PROYECTO
+ng build --prod --base-href "/barataria/"
