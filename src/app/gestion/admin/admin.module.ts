@@ -11,6 +11,8 @@ import { NavigationModule } from 'src/app/layout/navigation/navigation.module';
 import { QuickpanelModule } from 'src/app/layout/quickpanel/quickpanel.module';
 import { SidenavModule } from 'src/app/layout/sidenav/sidenav.module';
 import { ToolbarModule } from 'src/app/layout/toolbar/toolbar.module';
+import { CardsComponent } from 'src/app/pages/components/cards/cards.component';
+import { ComponentsModule } from 'src/app/pages/components/components.module';
 import { ActividadModule } from './actividad/actividad.module';
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';

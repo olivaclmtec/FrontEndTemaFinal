@@ -260,7 +260,7 @@ export class AppComponent {
           },
           {
             name: 'Listado Actividades',
-            routeOrFunction: '/actividad/listado',
+            routeOrFunction: '/admin/actividad/listado',
             position: 15
           }
         ]
