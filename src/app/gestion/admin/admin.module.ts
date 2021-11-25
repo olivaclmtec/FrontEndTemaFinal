@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { RouterModule } from '@angular/router';
 import { FurySharedModule } from 'src/@fury/fury-shared.module';
 import { BackdropModule } from 'src/@fury/shared/backdrop/backdrop.module';
@@ -19,6 +20,9 @@ import { AdminComponent } from './admin.component';
 import { InicioModule } from './inicio/inicio.module';
 
 @NgModule({
+  providers: [
+    {provide: MAT_DATE_LOCALE, useValue: 'es-ES'},
+  ],
   imports: [
     CommonModule,
     RouterModule,

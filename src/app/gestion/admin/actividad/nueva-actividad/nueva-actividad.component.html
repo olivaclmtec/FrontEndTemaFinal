@@ -6,9 +6,33 @@
   
     <fury-page-layout-content>
       <fury-card>
+
         <fury-card-header>
           <fury-card-header-heading>Información de Actividad</fury-card-header-heading>
         </fury-card-header>
+
+        <fury-card-content>
+          <form class="container" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+              <mat-form-field appearance="fill" fxFlex.gt-sm="60%" fxFlex.lt-md="50%" >
+                <mat-label>Título</mat-label>
+                <input matInput placeholder="Título" type="text" required>
+              </mat-form-field>
+              <mat-form-field appearance="fill" fxFlex.gt-sm="20%" fxFlex.lt-md="50%" >
+                <mat-label>Fecha de publicación</mat-label>
+                <input [matDatepicker]="datepickerRef" matInput>
+                <mat-datepicker-toggle [for]="datepickerRef" matSuffix></mat-datepicker-toggle>
+              </mat-form-field>
+              <mat-datepicker #datepickerRef></mat-datepicker>
+              <mat-form-field appearance="fill" fxFlex.gt-sm="20%" fxFlex.lt-md="50%" >
+                <mat-label>Fecha de baja</mat-label>
+                <input [matDatepicker]="datepickerRef2" matInput>
+                <mat-datepicker-toggle [for]="datepickerRef2" matSuffix></mat-datepicker-toggle>
+              </mat-form-field>
+              <mat-datepicker #datepickerRef2></mat-datepicker>
+            
+          </form>
+        </fury-card-content>
+
       </fury-card>
     </fury-page-layout-content>
   
