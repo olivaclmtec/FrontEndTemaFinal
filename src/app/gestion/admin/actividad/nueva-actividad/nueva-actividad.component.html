@@ -12,7 +12,8 @@
         </fury-card-header>
 
         <fury-card-content>
-          <form class="container" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+          <form class="container" >
+            <mat-dialog-content fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap="20px">
               <mat-form-field appearance="fill" fxFlex.gt-sm="60%" fxFlex.lt-md="50%" >
                 <mat-label>Título</mat-label>
                 <input matInput placeholder="Título" type="text" required>
@@ -29,12 +30,29 @@
                 <mat-datepicker-toggle [for]="datepickerRef2" matSuffix></mat-datepicker-toggle>
               </mat-form-field>
               <mat-datepicker #datepickerRef2></mat-datepicker>
+            </mat-dialog-content>
             
+            <mat-dialog-content fxLayout="column">
+              <quill-editor id="txtContent" [modules]="modulesQuill" (onEditorChanged)="onChangedEditor($event)"
+              ngClass.xs="quill-mobile" placeholder="Contenido de la actividad..."></quill-editor>
+            </mat-dialog-content>
+
           </form>
         </fury-card-content>
 
       </fury-card>
     </fury-page-layout-content>
+
+    <fury-page-layout-content style="margin-top: 20px;">
+      <fury-card>
+        
+        <fury-card-header>
+          <button mat-raised-button color="primary">Guardar</button>
+        </fury-card-header>
+
+      </fury-card>
+    </fury-page-layout-content>
   
+
   </fury-page-layout>
   

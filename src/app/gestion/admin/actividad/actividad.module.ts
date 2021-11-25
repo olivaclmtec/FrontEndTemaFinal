@@ -8,6 +8,7 @@ import { NuevaActividadComponent } from './nueva-actividad/nueva-actividad.compo
 import { ListadoActividadComponent } from './listado-actividad/listado-actividad.component';
 import { CardsComponent } from 'src/app/pages/components/cards/cards.component';
 import { FuryCardModule } from 'src/@fury/shared/card/card.module';
+import { QuillModule } from 'ngx-quill';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { FuryCardModule } from 'src/@fury/shared/card/card.module';
     MaterialModule,
     LoadingIndicatorModule,
     FurySharedModule,
-    FuryCardModule
+    FuryCardModule,
+    QuillModule.forRoot(),
   ],
   declarations: [NuevaActividadComponent, ListadoActividadComponent]
 })

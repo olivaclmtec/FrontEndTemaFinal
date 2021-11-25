@@ -38,7 +38,7 @@
            cdkScrollable
            class="content"
            fxFlex="auto"
-           fxLayout="column">
+           fxLayout="column" style="background-color: lightgray;">
         <ng-container *ngIf="(toolbarPosition$ | async) === 'static'">
           <ng-container *ngTemplateOutlet="toolbar"></ng-container>
         </ng-container>
